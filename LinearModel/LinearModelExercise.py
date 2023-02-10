@@ -38,11 +38,13 @@ w_cor = numpy.arange(0.0, 4.0, 0.1)
 b_cor = numpy.arange(-2.0, 2.1, 0.1)
 
 # 此处直接使用矩阵进行计算
+# w [[0., 0.1, ……, 3.9], [0., 0.1, ……, 3.9], …… [0., 0.1, ……, 3.9]]
+# b [[-2, -2, …… -2], [-1.9, -1.9, ……, -1.9] …… [2, 2, …… 2]]
 w, b = numpy.meshgrid(w_cor, b_cor)
 mse = numpy.zeros(w.shape)  # 定义误差（矩阵 实质上是每个点(w, b)对应的loss 全0）
 
 for x, y in zip(x_data, y_data):
-    _y = forward(w, b, x)  # w 每次都是[0., 0.1, ……, 3.9]   而b依次为[-2, -2, …… -2]、[-1.9, -1.9, ……, -1.9] …… [2, 2, …… 2]
+    _y = forward(w, b, x)  # _y = w * x + b
     mse += loss(_y, y)
 mse /= len(x_data)  # 均方误差
 
