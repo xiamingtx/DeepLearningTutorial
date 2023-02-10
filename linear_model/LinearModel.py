@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
-# file:LinearModel.py
+# file:linear_model.py
 # author:xm
 # datetime:2023/2/10 10:27
 # software: PyCharm
