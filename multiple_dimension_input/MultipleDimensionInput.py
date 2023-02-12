@@ -23,7 +23,7 @@ warnings.filterwarnings('ignore')  # 可以忽略matplotlib的warning
 # prepare dataset
 # 如果是np.loadtxt 如果传入的是.gz压缩包 也可以解析
 # xy = np.loadtxt('diabetes.csv.gz', delimiter=',', dtype=np.float32)
-xy = np.loadtxt('diabetes.csv', delimiter=',', dtype=np.float32)
+xy = np.loadtxt('../dataset/diabetes.csv', delimiter=',', dtype=np.float32)
 
 x_data = torch.from_numpy(xy[:, :-1])
 y_data = torch.from_numpy(xy[:, [-1]])

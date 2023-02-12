@@ -18,3 +18,5 @@ torchaudio==0.13.1+cu116
 torchvision==0.14.1+cu116
 typing_extensions==4.4.0
 urllib3==1.26.14
+
+pandas~=1.5.3
