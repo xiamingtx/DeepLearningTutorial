@@ -19,6 +19,10 @@ input: x -> (wx + b) -> output: sigmoid(wx + b)
 # import module your need
 import torch
 # import torch.nn.functional as F
+from matplotlib import pyplot as plt
+
+import warnings
+warnings.filterwarnings('ignore')  # 可以忽略matplotlib的warning
 
 # prepare dataset
 x_data = torch.Tensor([[1.0], [2.0], [3.0]])
@@ -47,11 +51,15 @@ model = LogisticRegressionModel()
 criterion = torch.nn.BCELoss(reduction='sum')  # reduction 可以取值 mean sum None
 optimizer = torch.optim.SGD(model.parameters(), lr=0.1)  # 可以尝试自己调节lr   0.01 -> 0.03 -> 0.1 ……
 
+epoch_list = []
+bce_list = []
 # training cycle forward, backward, update
 for epoch in range(1000):
     y_pred = model(x_data)
     loss = criterion(y_pred, y_data)
     print(epoch, loss.item())
+    epoch_list.append(epoch)
+    bce_list.append(loss.item())
 
     optimizer.zero_grad()
     loss.backward()
@@ -63,3 +71,9 @@ print('b = ', model.linear.bias.item())
 x_test = torch.Tensor([[4.0]])
 y_test = model(x_test)
 print('y_pred = ', y_test.data)
+
+# 绘图
+plt.plot(epoch_list, bce_list)
+plt.ylabel('Loss')
+plt.xlabel('epoch')
+plt.show()
