@@ -22,6 +22,10 @@ PyTorch Fashion(风格)
 
 # import module your need
 import torch
+from matplotlib import pyplot as plt
+
+import warnings
+warnings.filterwarnings('ignore')  # 可以忽略matplotlib的warning
 
 # 1. prepare dataset
 # x,y是矩阵，3行1列 也就是说总共有3个数据，每个数据只有1个特征
@@ -54,12 +58,16 @@ criterion = torch.nn.MSELoss(reduction='sum')  # define loss function: MSE
 # define optimizer: SGD(parameters you wanna optimize, learning rate)
 optimizer = torch.optim.SGD(model.parameters(), lr=0.01)
 
+epoch_list = []
+mse_list = []
 
 # 4、Training cycle
 for epoch in range(1000):
     y_pred = model(x_data)
     loss = criterion(y_pred, y_data)
     print(epoch, loss.item())  # 这里会去调用相应类的__str__函数
+    epoch_list.append(epoch)
+    mse_list.append(loss.item())
 
     optimizer.zero_grad()  # 梯度归零
     loss.backward()  # 反向传播
@@ -74,3 +82,8 @@ x_test = torch.tensor([[4.0]])
 y_test = model(x_test)
 print('y_pred = ', y_test.data)
 
+# 绘图
+plt.plot(epoch_list, mse_list)
+plt.ylabel('Loss')
+plt.xlabel('epoch')
+plt.show()
