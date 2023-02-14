@@ -5,5 +5,5 @@
 
 [练习题讲解](https://blog.csdn.net/bit452/category_10569531.html)
 
-## AI learning代码复现
+## 一起学 AI learning
 [链接](https://github.com/xiamingtx/ailearning)
