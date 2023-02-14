@@ -7,7 +7,7 @@
 # software: PyCharm
 
 """
-this is function  description 
+homework: https://www.kaggle.com/c/sentiment-analysis-on-movie-reviews/data
 """
 
 # import module your need
