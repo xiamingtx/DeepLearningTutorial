@@ -5,8 +5,21 @@
 
 [练习题讲解](https://blog.csdn.net/bit452/category_10569531.html)
 
+代码实现在pytorch-deeplearning-tutorial包下
+
 ## 一起学 AI learning
 [github链接](https://github.com/apachecn/ailearning)
 
+代码实现在ai-learning包下
+
+1. 跟着AI learning学习教程进行了代码实现。
+2. 使用版本较新的API 
+3. 添加了练习使用到的的数据集
+4. 使用jupyter-notebook 方便读者学习
+
 ## 一起读paper 
 [github链接](https://github.com/floodsung/Deep-Learning-Papers-Reading-Roadmap)
+
+论文在paper文件夹下
+
+## 一起学习~ 有问题欢迎指出
