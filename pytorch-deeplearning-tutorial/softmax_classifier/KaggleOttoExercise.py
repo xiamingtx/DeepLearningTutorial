@@ -48,7 +48,7 @@ class TrainDataset(Dataset):
         return self.len
 
 
-train_dataset = TrainDataset('../dataset/otto/train.csv')
+train_dataset = TrainDataset('../../data/otto/train.csv')
 # 数据加载器
 train_loader = DataLoader(dataset=train_dataset, batch_size=64, shuffle=True, num_workers=0)
 
@@ -108,7 +108,7 @@ if __name__ == '__main__':
 # 预测保存函数，用于保存预测结果
 def predict_save():
     with torch.no_grad():
-        test_data = pd.read_csv('../dataset/otto/test.csv')
+        test_data = pd.read_csv('../../data/otto/test.csv')
         x_text = torch.tensor(np.array(test_data)[:, 1:].astype(float))
         y_pred = model(x_text.float())
         _, predicted = torch.max(y_pred, dim=1)  # 这里先取出最大概率的索引，即是所预测的类别。

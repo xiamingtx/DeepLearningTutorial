@@ -27,7 +27,7 @@ warnings.filterwarnings('ignore')  # 可以忽略matplotlib的warning
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
 # 导入数据
-trainData = pd.read_csv('../dataset/titanic/train.csv')
+trainData = pd.read_csv('../../data/titanic/train.csv')
 # 将label和input（数值型数据）都提取出来
 label = trainData['Survived']
 inputs = trainData[['Pclass', 'SibSp', 'Parch', 'Fare']]

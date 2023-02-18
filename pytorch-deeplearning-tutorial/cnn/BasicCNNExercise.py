@@ -28,14 +28,14 @@ batch_size = 64
 transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.1307,), (0.3081,))])
 
 # mnist数据集为1*28*28的单通道图像
-train_dataset = datasets.MNIST(root='../dataset/mnist',
+train_dataset = datasets.MNIST(root='../../data/mnist',
                                train=True,
                                download=True,
                                transform=transform)  # 训练数据集
 train_loader = DataLoader(train_dataset,
                           shuffle=True,
                           batch_size=batch_size)
-test_dataset = datasets.MNIST(root='../dataset/mnist',
+test_dataset = datasets.MNIST(root='../../data/mnist',
                               train=False,
                               download=True,
                               transform=transform)

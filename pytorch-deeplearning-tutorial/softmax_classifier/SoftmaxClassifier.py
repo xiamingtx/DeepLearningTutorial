@@ -79,9 +79,9 @@ transform = transforms.Compose([  # Compose 可以将列表里的模块 类似�
     transforms.Normalize((0.1307,), (0.3081,))  # Normalize(均值, 标准差) 归一化   这里是用经验值 也可以自己算一下均值和标准差
 ])
 
-train_dataset = datasets.MNIST(root='../dataset/mnist/', train=True, download=True, transform=transform)
+train_dataset = datasets.MNIST(root='../../data/mnist/', train=True, download=True, transform=transform)
 train_loader = DataLoader(train_dataset, shuffle=True, batch_size=batch_size)
-test_dataset = datasets.MNIST(root='../dataset/mnist/', train=False, download=True, transform=transform)
+test_dataset = datasets.MNIST(root='../../data/mnist/', train=False, download=True, transform=transform)
 test_loader = DataLoader(test_dataset, shuffle=False, batch_size=batch_size)
 
 

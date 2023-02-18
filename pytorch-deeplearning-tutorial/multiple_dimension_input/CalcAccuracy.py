@@ -14,10 +14,10 @@
 import numpy as np
 import torch
 
-# prepare dataset
-xy = np.loadtxt('../dataset/diabetes.csv', delimiter=',', dtype=np.float32)
+# prepare data
+xy = np.loadtxt('../../data/diabetes.csv', delimiter=',', dtype=np.float32)
 x_data = torch.from_numpy(xy[:, :-1])  # 第一个‘：’是指读取所有行，第二个‘：’是指从第一列开始，最后一列不要
-print("input dataset.shape", x_data.shape)
+print("input data.shape", x_data.shape)
 y_data = torch.from_numpy(xy[:, [-1]])  # [-1] 最后得到的是个矩阵
 
 

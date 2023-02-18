@@ -11,7 +11,7 @@
 
 PyTorch Fashion(风格)
 
-1、prepare dataset
+1、prepare data
 
 2、design model using Class (inherit from torch.nn.Module)  # 目的是为了前向传播forward，即计算y hat(预测值)
 

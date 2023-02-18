@@ -49,7 +49,7 @@ class DiabetesDataset(Dataset):
         return self.len
 
 
-dataset = DiabetesDataset('../dataset/diabetes.csv')
+dataset = DiabetesDataset('../../data/diabetes.csv')
 train_loader = DataLoader(dataset=dataset, batch_size=32, shuffle=True, num_workers=2)  # num_workers 多线程
 
 
@@ -79,7 +79,7 @@ optimizer = torch.optim.SGD(model.parameters(), lr=0.01)
 if __name__ == '__main__':
     for epoch in range(100):
         for i, data in enumerate(train_loader, 0):  # train_loader 是先shuffle后mini_batch
-            # 1. prepare dataset
+            # 1. prepare data
             inputs, labels = data
             # 2. Forward
             y_pred = model(inputs)
