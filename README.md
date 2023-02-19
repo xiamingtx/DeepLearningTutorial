@@ -25,11 +25,23 @@
 # 一起做论文复现
 论文复现代码 位于papers-recurrence包下
 
-# tips:
+## tips:
 建议使用python-3.8 
 
-笔者在进行论文复现时有用到李沐老师的d2l包
+在进行论文复现时有用到李沐老师的d2l包
 
 选择合适的版本可以节约大家的时间~
+
+# 一起学《动手学深度学习v2》
+
+代码在 d2l-pytorch-slides包下
+
+[video](https://space.bilibili.com/1567748478/channel/seriesdetail?sid=358497)
+
+[book](https://zh-v2.d2l.ai/index.html#)
+
+[course](https://course.d2l.ai/zh-v2/)
+
+[d2l-zh-pytorch-slides-github](https://github.com/d2l-ai/d2l-zh-pytorch-slides)
 
 # 一起学习~ 有问题欢迎指出
