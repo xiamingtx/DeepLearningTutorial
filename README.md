@@ -26,17 +26,17 @@
 
 论文在paper文件夹下
 
-|  paper  |
-|  ----  |
-|  [Deep learning-Three Giants' Survey](http://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf)  |
-|  [A fast learning algorithm for deep belief nets](http://www.cs.toronto.edu/~hinton/absps/ncfast.pdf)  |
-|  [Reducing the dimensionality of data with neural networks.](http://www.cs.toronto.edu/~hinton/absps/science_som.pdf)  |
-|  [AlexNet](https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)  |
-|  [ResNet](https://arxiv.org/pdf/1512.03385.pdf)  |
-|  [Transformer-Attention Is All You Need](https://arxiv.org/pdf/1706.03762.pdf)  |
-|  [GNN-A Gentle Introduction to Graph Neural Networks](https://distill.pub/2021/gnn-intro/)  |
-|  [GAN](https://proceedings.neurips.cc/paper/2014/file/5ca3e9b122f61f8f06494c97b1afccf3-Paper.pdf)  |
-|  [BERT](https://arxiv.org/pdf/1810.04805.pdf)  |
+|  paper  |  recurrence  |
+|  ----  |  :----:  |
+|  [Deep learning-Three Giants' Survey](http://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf)  |  ❌  | 
+|  [A fast learning algorithm for deep belief nets](http://www.cs.toronto.edu/~hinton/absps/ncfast.pdf)  |  ⬜  | 
+|  [Reducing the dimensionality of data with neural networks.](http://www.cs.toronto.edu/~hinton/absps/science_som.pdf)  |  ⬜  | 
+|  [AlexNet](https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)  |  [✅](https://github.com/xiamingtx/DeepLearningTutorial/blob/main/papers-recurrence/AlexNet.ipynb)  | 
+|  [ResNet](https://arxiv.org/pdf/1512.03385.pdf)  |  [✅](https://github.com/xiamingtx/DeepLearningTutorial/blob/main/papers-recurrence/ResNet.ipynb)  | 
+|  [Transformer-Attention Is All You Need](https://arxiv.org/pdf/1706.03762.pdf)  |  ⬜  | 
+|  [GNN-A Gentle Introduction to Graph Neural Networks](https://distill.pub/2021/gnn-intro/)  |  ⬜  | 
+|  [GAN](https://proceedings.neurips.cc/paper/2014/file/5ca3e9b122f61f8f06494c97b1afccf3-Paper.pdf)  |  [✅](https://github.com/xiamingtx/DeepLearningTutorial/blob/main/papers-recurrence/GAN.ipynb)  | 
+|  [BERT](https://arxiv.org/pdf/1810.04805.pdf)  |  ⬜  | 
 
 
 # 一起做论文复现
