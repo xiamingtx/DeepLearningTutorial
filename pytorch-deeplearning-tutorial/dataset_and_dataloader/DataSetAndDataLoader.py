@@ -49,7 +49,7 @@ class DiabetesDataset(Dataset):
         return self.len
 
 
-dataset = DiabetesDataset('../../data/diabetes.csv')
+dataset = DiabetesDataset('../data/diabetes.csv')
 train_loader = DataLoader(dataset=dataset, batch_size=32, shuffle=True, num_workers=2)  # num_workers 多线程
 
 

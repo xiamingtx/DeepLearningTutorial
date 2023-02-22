@@ -31,7 +31,7 @@ class NameDataset(Dataset):
 
     def __init__(self, is_train_set=True):
         # 从gz当中读取数据
-        filename = '../../data/names_train.csv.gz' if is_train_set else '../../data/names_test.csv.gz'
+        filename = '../data/names_train.csv.gz' if is_train_set else '../data/names_test.csv.gz'
 
         with gzip.open(filename, 'rt') as f:
             reader = csv.reader(f)  # 每一行都是(name,country)的元组

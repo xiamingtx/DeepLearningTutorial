@@ -17,11 +17,11 @@ from torchvision import transforms
 from torchvision import datasets
 
 # prepare dataset
-train_dataset = datasets.MNIST(root='../../data/mnist',
+train_dataset = datasets.MNIST(root='../data/mnist',
                                train=True,
                                transform=transforms.ToTensor(),
                                download=True)
-test_dataset = datasets.MNIST(root='../../data/mnist',
+test_dataset = datasets.MNIST(root='../data/mnist',
                               train=False,
                               transform=transforms.ToTensor(),
                               download=True)
