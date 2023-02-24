@@ -38,7 +38,7 @@
 |  [GAN](https://proceedings.neurips.cc/paper/2014/file/5ca3e9b122f61f8f06494c97b1afccf3-Paper.pdf)  |  [✅](https://github.com/xiamingtx/DeepLearningTutorial/blob/main/papers-recurrence/GAN.ipynb)  | 
 |  [BERT](https://arxiv.org/pdf/1810.04805.pdf)  |  ⬜  | 
 |  [ViT](https://arxiv.org/pdf/2010.11929.pdf)  |  ⬜  | 
-
+|  [MAE](https://arxiv.org/pdf/2111.06377.pdf)  |  ⬜  | 
 
 ## recurrence code in papers-recurrence package
 
