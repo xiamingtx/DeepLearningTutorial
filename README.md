@@ -17,7 +17,7 @@
 3. 添加了练习使用到的的数据集
 4. 使用jupyter-notebook 方便读者学习
 
-# read paper and recur
+# read and recur papers  
 [paper-roadmap-github](https://github.com/floodsung/Deep-Learning-Papers-Reading-Roadmap)
 
 [mli-paper-reading](https://github.com/mli/paper-reading)
@@ -61,5 +61,11 @@ code in d2l-pytorch-slides package
 [course](https://course.d2l.ai/zh-v2/)
 
 [d2l-zh-pytorch-slides-github](https://github.com/d2l-ai/d2l-zh-pytorch-slides)
+
+# 一起学deep_thoughts的tutorial
+
+code in deep-thoughts-tutorial package
+
+[video](https://space.bilibili.com/373596439/channel/collectiondetail?sid=57707&ctype=0)
 
 # 一起学习~ 有问题欢迎指出
