@@ -50,13 +50,6 @@ tips:
 
 选择合适的版本可以节约大家的时间~
 
-
-|  paper  |  recurrence  |
-|  ----  |  :----:  |
-|  [Reducing the dimensionality of data with neural networks.](http://www.cs.toronto.edu/~hinton/absps/science_som.pdf)  |  ⬜  |
-|  [A fast learning algorithm for deep belief nets](http://www.cs.toronto.edu/~hinton/absps/ncfast.pdf)  |  ⬜  |
-|  [Deep learning-Three Giants' Survey](http://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf)  |  ❌  | 
-
 ## 自然语言处理 - Transformer
 |  年份 | 名字                                                         | 简介                 |  recurrence  |
 | ---- | ------------------------------------------------------------ | -------------------- |  :----:  |
@@ -101,5 +94,13 @@ tips:
 |  年份 | 名字                                                         | 简介                 |  recurrence  |
 | ---- | ------------------------------------------------------------ | -------------------- |  :----:  |
 | 2021 | [图神经网络介绍](https://distill.pub/2021/gnn-intro/)  | 	GNN的可视化介绍 |  ⬜  |
+
+## 其它
+|  paper  |  recurrence  |
+|  ----  |  :----:  |
+|  [Reducing the dimensionality of data with neural networks.](http://www.cs.toronto.edu/~hinton/absps/science_som.pdf)  |  ⬜  |
+|  [A fast learning algorithm for deep belief nets](http://www.cs.toronto.edu/~hinton/absps/ncfast.pdf)  |  ⬜  |
+|  [Deep learning-Three Giants' Survey](http://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf)  |  ❌  | 
+| [Automatic Differentiation in Machine Learning](https://www.jmlr.org/papers/volume18/17-468/17-468.pdf)  |  ❌  |
 
 # 一起学习~ 有问题欢迎指出
