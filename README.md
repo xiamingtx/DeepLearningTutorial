@@ -101,6 +101,6 @@ tips:
 |  [Reducing the dimensionality of data with neural networks.](http://www.cs.toronto.edu/~hinton/absps/science_som.pdf)  |  ⬜  |
 |  [A fast learning algorithm for deep belief nets](http://www.cs.toronto.edu/~hinton/absps/ncfast.pdf)  |  ⬜  |
 |  [Deep learning-Three Giants' Survey](http://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf)  |  ❌  | 
-| [Automatic Differentiation in Machine Learning](https://www.jmlr.org/papers/volume18/17-468/17-468.pdf)  |  ❌  |
+|  [Automatic Differentiation in Machine Learning](https://www.jmlr.org/papers/volume18/17-468/17-468.pdf)  |  ❌  |
 
 # 一起学习~ 有问题欢迎指出
