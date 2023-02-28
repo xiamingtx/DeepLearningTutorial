@@ -96,14 +96,19 @@ tips:
 | ---- | ------------------------------------------------------------ | -------------------- |  :----:  |
 | 2021 | [图神经网络介绍](https://distill.pub/2021/gnn-intro/)  | 	GNN的可视化介绍 |  ⬜  |
 
+## 新领域
+|  年份 | 名字                                                         | 简介                 |  recurrence  |
+| ---- | ------------------------------------------------------------ | -------------------- |  :----:  |
+| 2021 | [指导数学直觉](https://www.nature.com/articles/s41586-021-04086-x.pdf)  | 	分析不同数学物体之前的联系来帮助发现新定理 |  ⬜  |
+
 ## 其它
 |  paper  |  recurrence  |
 |  ----  |  :----:  |
+|  [R-Drop](https://arxiv.org/pdf/2106.14448.pdf)  |  [✅](https://github.com/xiamingtx/DeepLearningTutorial/blob/main/deep-thoughts-tutorial/dropout.ipynb)  |
+|  [Dropout](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf) |  [✅](https://github.com/xiamingtx/DeepLearningTutorial/blob/main/deep-thoughts-tutorial/dropout.ipynb) |
 |  [Reducing the dimensionality of data with neural networks.](http://www.cs.toronto.edu/~hinton/absps/science_som.pdf)  |  ⬜  |
 |  [A fast learning algorithm for deep belief nets](http://www.cs.toronto.edu/~hinton/absps/ncfast.pdf)  |  ⬜  |
 |  [Deep learning-Three Giants' Survey](http://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf)  |  ❌  | 
 |  [Automatic Differentiation in Machine Learning](https://www.jmlr.org/papers/volume18/17-468/17-468.pdf)  |  ❌  |
-|  [Dropout](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf) |  ⬜  |
-|  [R-Drop](https://arxiv.org/pdf/2106.14448.pdf)  |  ⬜  |
 
 # 一起学习~ 有问题欢迎指出
