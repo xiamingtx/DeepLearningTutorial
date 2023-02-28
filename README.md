@@ -102,5 +102,7 @@ tips:
 |  [A fast learning algorithm for deep belief nets](http://www.cs.toronto.edu/~hinton/absps/ncfast.pdf)  |  ⬜  |
 |  [Deep learning-Three Giants' Survey](http://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf)  |  ❌  | 
 |  [Automatic Differentiation in Machine Learning](https://www.jmlr.org/papers/volume18/17-468/17-468.pdf)  |  ❌  |
+|  [Dropout](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf) |  ⬜  |
+|  [R-Drop](https://arxiv.org/pdf/2106.14448.pdf)  |  ⬜  |
 
 # 一起学习~ 有问题欢迎指出
