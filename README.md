@@ -59,6 +59,7 @@ tips:
 ## 计算机视觉 - CNN
 |  年份 | 名字                                                         | 简介                 |  recurrence  |
 | ---- | ------------------------------------------------------------ | -------------------- |  :----:  |
+| 2022 | [Patches Are All You Need?](https://arxiv.org/pdf/2201.09792.pdf) | ConvMixer减少参数 |  ⬜  |
 | 2012 | [AlexNet](https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf)  | 深度学习热潮的奠基作 |  [✅](https://github.com/xiamingtx/DeepLearningTutorial/blob/main/papers-recurrence/AlexNet.ipynb)  |
 | 2015 | [ResNet](https://arxiv.org/pdf/1512.03385.pdf)  | 	构建深层网络都要有的残差连接。 |  [✅](https://github.com/xiamingtx/DeepLearningTutorial/blob/main/papers-recurrence/ResNet.ipynb)  |
 | 2021 | [RepVGG](https://arxiv.org/pdf/2101.03697.pdf) | 算子融合, 深度可分离卷积网络  |  ⬜  |
