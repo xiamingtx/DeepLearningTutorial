@@ -7,7 +7,7 @@
 # software: PyCharm
 
 """
-CNN:  Convolutional Neural Networks 卷积神经网络
+cnn:  Convolutional Neural Networks 卷积神经网络
 inputs -> Feature Extraction(Convolution & Subsampling) -> Fully Connected -> outputs
 
 Example:
