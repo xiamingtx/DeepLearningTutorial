@@ -68,7 +68,8 @@ tips:
 |  年份 | 名字                                                         | 简介                 |  recurrence  |
 | ---- | ------------------------------------------------------------ | -------------------- |  :----:  |
 | 2020 | [ViT](https://arxiv.org/pdf/2010.11929.pdf)  | Transformer杀入CV界 |  ⬜  |
-| 2021 | [MAE](https://arxiv.org/pdf/2111.06377.pdf)  | 	BERT的CV版 |  ⬜  |
+| 2021 | [MAE](https://arxiv.org/pdf/2111.06377.pdf)  | BERT的CV版 |  ⬜  |
+| 2021 | [Swin Transformer](https://arxiv.org/pdf/2103.14030.pdf)  | 多层次的Vision Transformer |  ⬜  |
 
 ## 生成模型
 |  年份 | 名字                                                         | 简介                 |  recurrence  |
