@@ -70,7 +70,7 @@ def calc_distance_latlon(source, destination):
     source_z = np.sin(np.radians(source_latitude))
     source = np.array((source_x, source_y, source_z))
 
-    # B地
+    # destination
     destination_latitude, destination_longitude = destination
     # 转为空间直角坐标
     destination_x = np.cos(np.radians(destination_latitude)) * np.cos(np.radians(destination_longitude))
