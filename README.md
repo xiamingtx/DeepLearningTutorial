@@ -1,14 +1,8 @@
-# 一起学深度学习
+# machine learning & deep learning
 
-# Tutorial
-## 一起学《PyTorch深度学习实践》课程
-[video](https://www.bilibili.com/video/BV1Y7411d7Ys/?p=1&vd_source=e472d54fbaf4a2a11e9526662ac3a29b)
+# machine learning
 
-[homework](https://blog.csdn.net/bit452/category_10569531.html)
-
-代码实现在pytorch-deeplearning-tutorial包下
-
-## 一起学 AI learning
+## AI learning - numpy + scipy
 [original github repository](https://github.com/apachecn/ailearning)
 
 代码实现在ai-learning包下
@@ -18,7 +12,20 @@
 3. 添加了练习使用到的的数据集
 4. 使用jupyter-notebook 方便读者学习
 
-## 一起学《动手学深度学习v2》
+## 机器学习-白板推导系列
+[video](https://space.bilibili.com/97068901/channel/seriesdetail?sid=594044)
+
+[github repository](https://github.com/shuhuai007/Machine-Learning-Session)
+
+# 深度学习
+## PyTorch深度学习实践 
+[video](https://www.bilibili.com/video/BV1Y7411d7Ys/?p=1&vd_source=e472d54fbaf4a2a11e9526662ac3a29b)
+
+[homework](https://blog.csdn.net/bit452/category_10569531.html)
+
+代码实现在pytorch-deep-learning-tutorial包下
+
+## 动手学深度学习v2
 
 code in d2l-pytorch-slides package
 
@@ -32,7 +39,7 @@ code in d2l-pytorch-slides package
 
 ## 一起学deep_thoughts的tutorial
 
-code in deep-thoughts-tutorial package
+codes in deep-thoughts-tutorial package
 
 [video](https://space.bilibili.com/373596439/channel/collectiondetail?sid=57707&ctype=0)
 
