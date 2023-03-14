@@ -20,6 +20,7 @@ d2l==0.17.6
 debugpy @ file:///C:/ci/debugpy_1637073815078/work
 decorator @ file:///opt/conda/conda-bld/decorator_1643638310831/work
 defusedxml @ file:///tmp/build/80754af9/defusedxml_1615228127516/work
+einops==0.6.0
 entrypoints @ file:///C:/ci/entrypoints_1649926621247/work
 executing @ file:///opt/conda/conda-bld/executing_1646925071911/work
 fastjsonschema @ file:///C:/Users/BUILDE~1/AppData/Local/Temp/abs_ebruxzvd08/croots/recipe/python-fastjsonschema_1661376484940/work
