@@ -24,8 +24,10 @@ einops==0.6.0
 entrypoints @ file:///C:/ci/entrypoints_1649926621247/work
 executing @ file:///opt/conda/conda-bld/executing_1646925071911/work
 fastjsonschema @ file:///C:/Users/BUILDE~1/AppData/Local/Temp/abs_ebruxzvd08/croots/recipe/python-fastjsonschema_1661376484940/work
+filelock==3.9.1
 flit_core @ file:///opt/conda/conda-bld/flit-core_1644941570762/work/source/flit_core
 fonttools==4.38.0
+huggingface-hub==0.13.2
 idna @ file:///C:/b/abs_bdhbebrioa/croot/idna_1666125572046/work
 importlib-metadata @ file:///C:/ci/importlib-metadata_1648544472910/work
 importlib-resources @ file:///tmp/build/80754af9/importlib_resources_1625135880749/work
@@ -88,6 +90,7 @@ python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
 pytz @ file:///C:/b/abs_22fofvpn1x/croot/pytz_1671698059864/work
 pywin32==305.1
 pywinpty @ file:///C:/ci_310/pywinpty_1644230983541/work/target/wheels/pywinpty-2.0.2-cp38-none-win_amd64.whl
+PyYAML==6.0
 pyzmq @ file:///C:/ci/pyzmq_1657616005830/work
 qtconsole @ file:///C:/b/abs_5bap7f8n0t/croot/qtconsole_1674008444833/work
 QtPy @ file:///C:/ci/qtpy_1662015036641/work
@@ -102,6 +105,7 @@ soupsieve @ file:///C:/b/abs_fasraqxhlv/croot/soupsieve_1666296394662/work
 stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
 sympy==1.11.1
 terminado @ file:///C:/b/abs_25nakickad/croot/terminado_1671751845491/work
+timm==0.6.12
 tinycss2 @ file:///C:/b/abs_52w5vfuaax/croot/tinycss2_1668168823131/work
 toml @ file:///tmp/build/80754af9/toml_1616166611790/work
 tomli @ file:///C:/Windows/TEMP/abs_ac109f85-a7b3-4b4d-bcfd-52622eceddf0hy332ojo/croots/recipe/tomli_1657175513137/work
