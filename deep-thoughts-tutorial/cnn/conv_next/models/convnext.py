@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
-# file:ConvNeXt.py
+# file:convnext.py
 # author:xm
 # datetime:2023/3/15 17:38
 # software: PyCharm
