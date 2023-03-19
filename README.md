@@ -113,6 +113,7 @@ tips:
 ## 其它
 |  paper  |  recurrence  |
 |  ----  |  :----:  |
+|  [Layer Normalization](https://arxiv.org/pdf/1607.06450.pdf)  |  ⬜  |
 |  [R-Drop](https://arxiv.org/pdf/2106.14448.pdf)  |  [✅](https://github.com/xiamingtx/DeepLearningTutorial/blob/main/deep-thoughts-tutorial/dropout.ipynb)  |
 |  [Dropout](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf) |  [✅](https://github.com/xiamingtx/DeepLearningTutorial/blob/main/deep-thoughts-tutorial/dropout.ipynb) |
 |  [Reducing the dimensionality of data with neural networks.](http://www.cs.toronto.edu/~hinton/absps/science_som.pdf)  |  ⬜  |
