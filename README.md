@@ -71,12 +71,18 @@ tips:
 | 2015 | [ResNet](https://arxiv.org/pdf/1512.03385.pdf)  | 	构建深层网络都要有的残差连接。 |  [✅](https://github.com/xiamingtx/DeepLearningTutorial/blob/main/papers-recurrence/ResNet.ipynb)  |
 | 2021 | [RepVGG](https://arxiv.org/pdf/2101.03697.pdf) | 算子融合, 深度可分离卷积网络  |  ⬜  |
 | 2022 | [ConvNeXt](https://arxiv.org/pdf/2201.03545.pdf) | 2020s 下一代卷积 |  ⬜  |
+
 ## 计算机视觉 - Transformer
 |  年份 | 名字                                                         | 简介                 |  recurrence  |
 | ---- | ------------------------------------------------------------ | -------------------- |  :----:  |
 | 2020 | [ViT](https://arxiv.org/pdf/2010.11929.pdf)  | Transformer杀入CV界 |  ⬜  |
 | 2021 | [MAE](https://arxiv.org/pdf/2111.06377.pdf)  | BERT的CV版 |  ⬜  |
 | 2021 | [Swin Transformer](https://arxiv.org/pdf/2103.14030.pdf)  | 多层次的Vision Transformer |  ⬜  |
+
+## PointCloud 点云处理
+|  年份 | 名字                                                         | 简介                 |  recurrence  |
+| ---- | ------------------------------------------------------------ | -------------------- |  :----:  |
+| 2017 | [Point Net](https://arxiv.org/pdf/1612.00593.pdf)  | 点云处理开山之作 |  ⬜  |
 
 ## 生成模型
 |  年份 | 名字                                                         | 简介                 |  recurrence  |
