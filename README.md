@@ -88,8 +88,8 @@ tips:
 |  年份 | 名字                                                         | 简介                 |  recurrence  |
 | ---- | ------------------------------------------------------------ | -------------------- |  :----:  |
 | 2014 | [GAN](https://proceedings.neurips.cc/paper/2014/file/5ca3e9b122f61f8f06494c97b1afccf3-Paper.pdf)  | 	生成模型的开创工作 |  [✅](https://github.com/xiamingtx/DeepLearningTutorial/blob/main/papers-recurrence/GAN.ipynb)  |
-| 2014 | [LSGAN](https://arxiv.org/pdf/1611.04076.pdf)  | 	最小二乘生成对抗模型 使用卷积网络  |  ⬜  |
-| 2014 | [cGAN](https://arxiv.org/pdf/1411.1784.pdf)  |  条件生成对抗模型  |  ⬜  |
+| 2014 | [cGAN](https://arxiv.org/pdf/1411.1784.pdf)  |  条件生成对抗模型  |  [✅](https://github.com/xiamingtx/DeepLearningTutorial/blob/main/papers-recurrence/cgan_mnist.ipynb)  |
+| 2016 | [LSGAN](https://arxiv.org/pdf/1611.04076.pdf)  | 	最小二乘生成对抗模型 使用卷积网络  |  [✅](https://github.com/xiamingtx/DeepLearningTutorial/blob/main/papers-recurrence/ls_cgan_mnist.ipynb)  |
 
 ## 对比学习
 |  年份 | 名字                                                         | 简介                 |  recurrence  |
