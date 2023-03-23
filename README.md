@@ -109,7 +109,7 @@ tips:
 | 2021 |  [DINO](https://arxiv.org/pdf/2104.14294.pdf) | transformer加自监督在视觉也很香  |  ⬜  |             
 
 ## 图神经网络
-|  年份 | 名字                                                         | 简介                 |  recurrence  |
+| 年份 | 名字                                                         | 简介                 |  recurrence  |
 | ---- | ------------------------------------------------------------ | -------------------- |  :----:  |
 | 2021 | [图神经网络介绍](https://distill.pub/2021/gnn-intro/)  | 	GNN的可视化介绍 |  ⬜  |
 
@@ -119,14 +119,15 @@ tips:
 | 2021 | [指导数学直觉](https://www.nature.com/articles/s41586-021-04086-x.pdf)  | 	分析不同数学物体之前的联系来帮助发现新定理 |  ⬜  |
 
 ## 其它
-|  paper  |  recurrence  |
-|  ----  |  :----:  |
-|  [Layer Normalization](https://arxiv.org/pdf/1607.06450.pdf)  |  ⬜  |
-|  [R-Drop](https://arxiv.org/pdf/2106.14448.pdf)  |  [✅](https://github.com/xiamingtx/DeepLearningTutorial/blob/main/deep-thoughts-tutorial/dropout.ipynb)  |
-|  [Dropout](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf) |  [✅](https://github.com/xiamingtx/DeepLearningTutorial/blob/main/deep-thoughts-tutorial/dropout.ipynb) |
-|  [Reducing the dimensionality of data with neural networks.](http://www.cs.toronto.edu/~hinton/absps/science_som.pdf)  |  ⬜  |
-|  [A fast learning algorithm for deep belief nets](http://www.cs.toronto.edu/~hinton/absps/ncfast.pdf)  |  ⬜  |
-|  [Deep learning-Three Giants' Survey](http://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf)  |  ❌  | 
-|  [Automatic Differentiation in Machine Learning](https://www.jmlr.org/papers/volume18/17-468/17-468.pdf)  |  ❌  |
+|  年份  |  名字  |  recurrence  |
+| ---- |  ----  |  :----:  |
+| 2006 |  [A fast learning algorithm for deep belief nets](http://www.cs.toronto.edu/~hinton/absps/ncfast.pdf)  |  ⬜  |
+| 2006 |  [Reducing the dimensionality of data with neural networks.](http://www.cs.toronto.edu/~hinton/absps/science_som.pdf)  |  ⬜  |
+| 2014 |  [Dropout](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf) |  [✅](https://github.com/xiamingtx/DeepLearningTutorial/blob/main/deep-thoughts-tutorial/dropout.ipynb) |
+| 2015 |  [Deep learning-Three Giants' Survey](http://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf)  |  ❌  |
+| 2016 |  [Layer Normalization](https://arxiv.org/pdf/1607.06450.pdf)  |  ⬜  |
+| 2017 |  [Glow: Generative Flow](https://arxiv.org/pdf/1807.03039.pdf)  |  ⬜  |
+| 2018 |  [Automatic Differentiation in Machine Learning](https://www.jmlr.org/papers/volume18/17-468/17-468.pdf)  |  ❌  |
+| 2021 |  [R-Drop](https://arxiv.org/pdf/2106.14448.pdf)  |  [✅](https://github.com/xiamingtx/DeepLearningTutorial/blob/main/deep-thoughts-tutorial/dropout.ipynb)  |
 
 # 一起学习~ 有问题欢迎指出
