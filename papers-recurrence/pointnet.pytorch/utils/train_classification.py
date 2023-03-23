@@ -100,9 +100,10 @@ num_batch = len(dataset) / opt.batchSize
 for epoch in range(opt.nepoch):
     scheduler.step()
     for i, data in enumerate(dataloader, 0):
+        # points: [batch_size, n_pts, 3], target: [batch_size, 1]
         points, target = data
-        target = target[:, 0]
-        points = points.transpose(2, 1)
+        target = target[:, 0]  # [batch_size, 1] -> [batch_size]
+        points = points.transpose(2, 1)  # [batch_size, n_pts, 3] -> [batch_size, 3, n_pts]
         points, target = points.cuda(), target.cuda()
         optimizer.zero_grad()
         classifier = classifier.train()

@@ -27,22 +27,24 @@ class STN3d(nn.Module):
 
 
     def forward(self, x):
+        # x: [batch_size, 3, n_pts]
         batchsize = x.size()[0]
-        x = F.relu(self.bn1(self.conv1(x)))
-        x = F.relu(self.bn2(self.conv2(x)))
-        x = F.relu(self.bn3(self.conv3(x)))
-        x = torch.max(x, 2, keepdim=True)[0]
-        x = x.view(-1, 1024)
+        x = F.relu(self.bn1(self.conv1(x)))  # [batch_size, 3, n_pts] -> [batch_size, 64, n_pts]
+        x = F.relu(self.bn2(self.conv2(x)))  # [batch_size, 64, n_pts] -> [batch_size, 128, n_pts]
+        x = F.relu(self.bn3(self.conv3(x)))  # [batch_size, 128, n_pts] -> [batch_size, 1024, n_pts]
+        # torch.max()会返回两个值：最大值以及最大值索引 取出前者
+        x = torch.max(x, 2, keepdim=True)[0]  # [batch_size, 1024, n_pts] -> [batch_size, 1024, 1]
+        x = x.view(-1, 1024)  # [batch_size, 1024, 1] -> [batch_size, 1024]
 
-        x = F.relu(self.bn4(self.fc1(x)))
-        x = F.relu(self.bn5(self.fc2(x)))
-        x = self.fc3(x)
-
+        x = F.relu(self.bn4(self.fc1(x)))  # [batch_size, 1024] -> [batch_size, 512]
+        x = F.relu(self.bn5(self.fc2(x)))  # [batch_size, 512] -> [batch_size, 256]
+        x = self.fc3(x)  # [batch_size, 256] -> [batch_size, 9]
+        # iden: [batch_size, 9]
         iden = Variable(torch.from_numpy(np.array([1,0,0,0,1,0,0,0,1]).astype(np.float32))).view(1,9).repeat(batchsize,1)
         if x.is_cuda:
             iden = iden.cuda()
         x = x + iden
-        x = x.view(-1, 3, 3)
+        x = x.view(-1, 3, 3)  # [batch_size, 9] -> [batch_size, 3, 3]
         return x
 
 
@@ -100,26 +102,27 @@ class PointNetfeat(nn.Module):
             self.fstn = STNkd(k=64)
 
     def forward(self, x):
+        # x: [batch_size, 3, n_pts]
         n_pts = x.size()[2]
-        trans = self.stn(x)
-        x = x.transpose(2, 1)
-        x = torch.bmm(x, trans)
-        x = x.transpose(2, 1)
-        x = F.relu(self.bn1(self.conv1(x)))
+        trans = self.stn(x)  # [batch_size, 3, 3]
+        x = x.transpose(2, 1)  # [batch_size, 3, n_pts] -> [batch_size, n_pts, 3]
+        x = torch.bmm(x, trans)  # [batch_size, n_pts, 3] @ [batch_size, 3, 3] -> [batch_size, n_pts, 3]
+        x = x.transpose(2, 1)  # [batch_size, n_pts, 3] -> [batch_size, 3, n_pts]
+        x = F.relu(self.bn1(self.conv1(x)))  # [batch_size, 3, n_pts] -> [batch_size, 64, n_pts]
 
         if self.feature_transform:
-            trans_feat = self.fstn(x)
-            x = x.transpose(2,1)
-            x = torch.bmm(x, trans_feat)
-            x = x.transpose(2,1)
+            trans_feat = self.fstn(x)  # trans_feat: [batch_size, 64, 64]
+            x = x.transpose(2,1)  # [batch_size, 64, n_pts] -> [batch_size, n_pts, 64]
+            x = torch.bmm(x, trans_feat)  # [batch_size, n_pts, 64] -> [batch_size, n_pts, 64]
+            x = x.transpose(2,1)  # [batch_size, 64, n_pts]
         else:
             trans_feat = None
 
-        pointfeat = x
-        x = F.relu(self.bn2(self.conv2(x)))
-        x = self.bn3(self.conv3(x))
-        x = torch.max(x, 2, keepdim=True)[0]
-        x = x.view(-1, 1024)
+        pointfeat = x  # [batch_size, 64, n_pts]
+        x = F.relu(self.bn2(self.conv2(x)))  # [batch_size, 64, n_pts] -> [batch_size, 128, n_pts]
+        x = self.bn3(self.conv3(x))  # [batch_size, 64, n_pts] -> [batch_size, 1024, n_pts]
+        x = torch.max(x, 2, keepdim=True)[0]  # [batch_size, 1024, n_pts] -> [batch_size, 1024, 1]
+        x = x.view(-1, 1024)  # [batch_size, 1024, 1] -> [batch_size, 1024]
         if self.global_feat:
             return x, trans, trans_feat
         else:
@@ -140,10 +143,12 @@ class PointNetCls(nn.Module):
         self.relu = nn.ReLU()
 
     def forward(self, x):
+        # input: [batch_size, 3, n_pts]
+        # x: [batch_size, 1024]  trans: [batch_size, 3, 3]  trans_feat: [batch_size, 64, 64] or None
         x, trans, trans_feat = self.feat(x)
-        x = F.relu(self.bn1(self.fc1(x)))
-        x = F.relu(self.bn2(self.dropout(self.fc2(x))))
-        x = self.fc3(x)
+        x = F.relu(self.bn1(self.fc1(x)))  # [batch_size, 1024] -> [batch_size, 512]
+        x = F.relu(self.bn2(self.dropout(self.fc2(x))))  # [batch_size, 512] -> [batch_size, 256]
+        x = self.fc3(x)  # [batch_size, 256] -> [batch_size, 16]
         return F.log_softmax(x, dim=1), trans, trans_feat
 
 
