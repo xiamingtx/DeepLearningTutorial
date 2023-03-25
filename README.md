@@ -83,6 +83,7 @@ tips:
 |  年份 | 名字                                                         | 简介                 |  recurrence  |
 | ---- | ------------------------------------------------------------ | -------------------- |  :----:  |
 | 2017 | [Point Net](https://arxiv.org/pdf/1612.00593.pdf)  | 深度学习点云处理开山之作 |  ⬜  |
+| 2022 | [Stratified Transformer for 3D Point Cloud Segmentation](https://arxiv.org/pdf/2203.14508.pdf) | 3D点云之层级式Transformer  | ⬜ |
 
 ## 生成模型
 |  年份 | 名字                                                         | 简介                 |  recurrence  |
