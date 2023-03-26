@@ -127,7 +127,7 @@ tips:
 | 2014 |  [Dropout](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf) |  [✅](https://github.com/xiamingtx/DeepLearningTutorial/blob/main/deep-thoughts-tutorial/dropout.ipynb) |
 | 2015 |  [Deep learning-Three Giants' Survey](http://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf)  |  ❌  |
 | 2016 |  [Layer Normalization](https://arxiv.org/pdf/1607.06450.pdf)  |  ⬜  |
-| 2017 |  [Glow: Generative Flow](https://arxiv.org/pdf/1807.03039.pdf)  |  ⬜  |
+| 2017 |  [Glow: Generative Flow](https://arxiv.org/pdf/1807.03039.pdf)  |  [✅](https://github.com/xiamingtx/DeepLearningTutorial/tree/main/papers-recurrence/glow)  |
 | 2018 |  [Automatic Differentiation in Machine Learning](https://www.jmlr.org/papers/volume18/17-468/17-468.pdf)  |  ❌  |
 | 2021 |  [R-Drop](https://arxiv.org/pdf/2106.14448.pdf)  |  [✅](https://github.com/xiamingtx/DeepLearningTutorial/blob/main/deep-thoughts-tutorial/dropout.ipynb)  |
 
