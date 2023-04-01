@@ -90,6 +90,7 @@ tips:
 | ---- | ------------------------------------------------------------ | -------------------- |  :----:  |
 | 2015 | [Deep Unsupervised Learning using Nonequilibrium Thermodynamics](https://arxiv.org/pdf/1503.03585.pdf)  | 首次提出diffusion |  ⬜  |
 | 2020 | [Denoising Diffusion Probabilistic Models](https://arxiv.org/pdf/2006.11239.pdf)  | 在CV领域应用扩散模型 |  ⬜  |
+| 2021 | [Diffusion Models Beat GANs on Image Synthesis](https://arxiv.org/pdf/2105.05233.pdf)  | 扩散模型与GAN |  ⬜  |
 
 ## PointCloud 点云处理
 |  年份 | 名字                                                         | 简介                 |  recurrence  |
