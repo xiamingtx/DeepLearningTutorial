@@ -99,6 +99,7 @@ tips:
 | 2022 | [Stratified Transformer for 3D Point Cloud Segmentation](https://arxiv.org/pdf/2203.14508.pdf) | 3D点云之层级式Transformer  | ⬜ |
 | 2021 | [Point Transformer](https://arxiv.org/pdf/2012.09164.pdf) | Transformer应用于点云  | ⬜ |
 | 2022 | [Point Transformer_v2](https://arxiv.org/pdf/2210.05666.pdf) | Point Transformer v2  | ⬜ |
+| 2023 | [Spherical Transformer for LiDAR-based 3D Recognition](https://arxiv.org/pdf/2303.12766v1.pdf) | 3D语义分割SOTA | ⬜ |
 
 ## 生成模型
 |  年份 | 名字                                                         | 简介                 |  recurrence  |
