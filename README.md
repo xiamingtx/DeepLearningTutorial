@@ -17,6 +17,12 @@
 
 [github repository](https://github.com/shuhuai007/Machine-Learning-Session)
 
+## 机器学习-统计学习方法
+
+The code is in the statistical-learning-methods package 
+
+from repository: [lihang-code](https://github.com/fengdu78/lihang-code)
+
 # deep learning
 ## PyTorch深度学习实践 
 [video](https://www.bilibili.com/video/BV1Y7411d7Ys/?p=1&vd_source=e472d54fbaf4a2a11e9526662ac3a29b)
