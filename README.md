@@ -1,5 +1,8 @@
 # machine learning & deep learning
 
+# notes
+[笔记-语雀](https://www.yuque.com/xiaming-tnixs/ablzgp)
+
 # machine learning
 
 ## AI learning - numpy + scipy
