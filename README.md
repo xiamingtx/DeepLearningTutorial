@@ -52,6 +52,12 @@ codes in deep-thoughts-tutorial package
 
 [video](https://space.bilibili.com/373596439/channel/collectiondetail?sid=57707&ctype=0)
 
+## 一起学Modern-Computer-Vision-with-PyTorch
+
+对书中代码进行了补充、注释
+
+[original code](https://github.com/PacktPublishing/Modern-Computer-Vision-with-PyTorch)
+
 # read and recur papers  
 [paper-roadmap-github](https://github.com/floodsung/Deep-Learning-Papers-Reading-Roadmap)
 
