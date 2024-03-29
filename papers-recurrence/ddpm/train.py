@@ -66,16 +66,13 @@ if __name__ == '__main__':
         for step, batch in enumerate(dataloader):
             optimizer.zero_grad()
 
-            batch_size = batch["pixel_values"].shape[0]
-            batch = batch["pixel_values"].to(device)
-            # 国内版启用这段，注释上面两行
-            # batch_size = batch[0].shape[0]
-            # batch = batch[0].to(device)
+            batch_size = batch[0].shape[0]
+            batch = batch[0].to(device)
 
             # Algorithm 1 line 3: sample t uniformally for every example in the batch
             t = torch.randint(0, timesteps, (batch_size,), device=device).long()
 
-            loss = p_losses(model, batch, t, loss_type="huber")
+            loss = p_losses(model, batch, t, sqrt_alphas_cumprod, sqrt_one_minus_alphas_cumprod, loss_type="huber")
 
             if step % 100 == 0:
                 print("Loss:", loss.item())

@@ -44,7 +44,9 @@ class Unet(nn.Module):
         init_dim = default(init_dim, dim // 3 * 2)
         self.init_conv = nn.Conv2d(channels, init_dim, kernel_size=7, padding=3)
 
+        # [init_dim, dim, dim * 2, dim * 4, dim * 8] (default)
         dims = [init_dim, *map(lambda m: dim * m, dim_mults)]
+        # [(init_dim, dim), (dim, dim * 2), (dim * 2, dim * 4), (dim * 4, dim * 8)]
         in_out = list(zip(dims[:-1], dims[1:]))
 
         if use_convnext:
@@ -55,6 +57,7 @@ class Unet(nn.Module):
         # time embeddings
         if with_time_emb:
             time_dim = dim * 4
+            # apply positional encoding and mlp
             self.time_mlp = nn.Sequential(
                 SinusoidalPositionEmbeddings(dim),
                 nn.Linear(dim, time_dim),
@@ -111,13 +114,13 @@ class Unet(nn.Module):
     def forward(self, x, time):
         """
         :param x: noisy image, shape = (bs, c, h, w)
-        :param time: noise, shape = (bs, dim)
+        :param time: timestep, shape = (bs,)
         :return: tensor with shape = (bs, c, h, w)
         """
         # apply conv, map input to init_dim channels, (bs, c, h, w) -> (bs, init_dim, h, w)
         x = self.init_conv(x)
 
-        # employ positional encoding for noise, (bs, dim) -> (bs, time_dim)
+        # employ positional encoding for timestep, (bs, ) -> (bs, dim) -> (bs, time_dim)
         t = self.time_mlp(time) if exists(self.time_mlp) else None
 
         h = []
@@ -148,11 +151,13 @@ class Unet(nn.Module):
         return self.final_conv(x)
 
 
-def p_losses(denoise_model, x_start, t, noise=None, loss_type="l1"):
+def p_losses(denoise_model, x_start, t, sqrt_alphas_cumprod, sqrt_one_minus_alphas_cumprod, noise=None, loss_type="l1"):
+    # if noise is non-given, sample noise from a standard gaussian distribution
     if noise is None:
         noise = torch.randn_like(x_start)
 
-    x_noisy = q_sample(x_start=x_start, t=t, noise=noise)
+    # add noise to image according to the timestep=t
+    x_noisy = q_sample(x_start, t, sqrt_alphas_cumprod, sqrt_one_minus_alphas_cumprod, noise)
     predicted_noise = denoise_model(x_noisy, t)
 
     if loss_type == 'l1':
