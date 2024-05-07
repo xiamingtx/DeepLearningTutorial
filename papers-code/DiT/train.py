@@ -23,7 +23,7 @@ from dit import DiT
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 EPOCH = 500
-BATCH_SIZE = 1
+BATCH_SIZE = 300
 
 if __name__ == '__main__':
     dataset = MNIST()
