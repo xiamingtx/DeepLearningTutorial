@@ -93,7 +93,7 @@ class LLaMA:
         prompt_tokens_mask = tokens != pad_id  # True if the token is a prompt token, False otherwise
         for cur_pos in tqdm(range(1, total_len), desc='Generating tokens'):
             with torch.inference_mode():
-                logits = self.model.forward(tokens[:, cur_pos - 1:cur_pos], cur_pos)
+                logits = self.model.forward(tokens[:, cur_pos - 1:cur_pos], cur_pos - 1)
                 if temperature > 0:
                     # The temperature is applied BEFORE the softmax
                     probs = torch.softmax(logits[:, -1] / temperature, dim=-1)
